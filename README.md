@@ -23,3 +23,4 @@ The `sfdx-project.json` file contains useful configuration information for your 
 
 ## UPDATED
 
+-updated readme in fature 1 branch.
