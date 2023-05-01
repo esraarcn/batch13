@@ -21,6 +21,13 @@ public class Newcar {
     }
     public void checkSpeed(){
 
+        if (currentSpeed > 0 && currentSpeed <= 30){
+            system.debug('City Mode');
+        }else if (currentSpeed > 31 && currentSpeed <= 60){
+            system.debug('Economy Mode');
+        }else {
+            system.debug('Sports Mode');
+        }
+    }
 
     }
-}

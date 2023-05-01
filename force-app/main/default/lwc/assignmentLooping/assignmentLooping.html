@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="Assignment Looping">
+        <div class="slds-var-m-around_medium">
+        <template for:each={animals} for:item="anm">
+            <div key={anm}>{anm}</div>
+        </template><br>
+        <template for:each={toyotaCars} for:item="crs">
+            <div key={crs.Model}>
+                <div>Model Name is: {crs.Model}</div>
+                <div>Model Year is: {crs.ModelYear}</div>
+                <div>Povertrain is : {crs.Powertrain}</div><br>
+            </div>
+
+        </template>
+        </div>
+    </lightning-card>
+</template>

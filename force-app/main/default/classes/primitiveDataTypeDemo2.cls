@@ -1,4 +1,3 @@
-/*
 public class primitiveDataTypeDemo2 {
     public void printNewDate() {
         System.debug('print new dates here.');
@@ -66,7 +65,7 @@ public class primitiveDataTypeDemo2 {
 
     }   
 }
-*/
+
 /*
 public class DatetimeMethodsDemo {
     public void calculateAgeInMonths(){

@@ -1,0 +1,27 @@
+<template>
+    <lightning-card title="Record Edit Form - Contact">
+        <div class="slds-var-m-around_medium">
+        <lightning-record-edit-form
+        object-api-name={objName}
+        record-id={recordId}
+        onsuccess={successHandler}
+        onerror={errorHandler}>
+
+        <lightning-input-field field-name={fields.FirstName}></lightning-input-field>
+        <lightning-input-field field-name={fields.LastName}></lightning-input-field>
+        <lightning-input-field field-name={fields.Title}></lightning-input-field>
+        <lightning-input-field field-name={fields.Department}></lightning-input-field>
+        <lightning-input-field field-name={fields.Email}></lightning-input-field>
+        <lightning-input-field field-name={fields.Phone}></lightning-input-field>
+
+        <div class="slds-align_absolute-center">
+        <lightning-button label="Cancel" type="reset" variant="neutral" class="slds-var-m-right_x-small"></lightning-button>
+        <lightning-button label="Save" type="submit" variant="brand"></lightning-button>
+        </div>
+
+    
+        </lightning-record-edit-form>
+
+        </div>
+    </lightning-card>
+</template>

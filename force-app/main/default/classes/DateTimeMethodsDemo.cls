@@ -1,4 +1,3 @@
-
 public class DateTimeMethodsDemo {
     public void calculateAgeInMonths(){
         date birthDate = date.newInstance(1990, 10, 9);

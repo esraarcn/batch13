@@ -1,0 +1,18 @@
+<template>
+    <lightning-card title="Display Combobox">
+        <div class="slds-var-m-around_medium">
+            <lightning-combobox
+            name="message"
+            label="Select Option from dropdown"
+            value={value}
+            placeholder="Select Option"
+            options={options}
+            onchange={handleChange} ></lightning-combobox><br/>
+
+           <template lwc:if={showMessage}>
+        <i>  LWC is my favorite subject in Salesforce :) </i>
+           </template>
+        </div>
+        
+    </lightning-card>
+</template>

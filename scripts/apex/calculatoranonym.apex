@@ -22,6 +22,4 @@ integer sum2 = c.add(x,y); //we are storing the return value in a variable.
 
 
 
-string parameter1 = 'printing this for batch13';
-string yes = c.printAndReturnMessage(parameter1);
-system.debug('return message: ' + yes);
+

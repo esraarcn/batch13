@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="The Way Binding">
+        <div class="slds-var-m-around_medium">
+            <lightning-input type="text" label="Enter Student Name" value={studentName} onchange={changeHandler} ></lightning-input><br/>
+            <lightning-input type="number" label="Enter Age" value={age} onkeyup={ageHandler} ></lightning-input><br/>
+            <lightning-input type="text" label="Batch Name" onchange={batchNameHandler} ></lightning-input><br/>
+            
+            <div><strong>Student Name is {studentName}</strong></div>
+            <div><strong>Age is {age}</strong></div>
+            <div><strong>Batch Name is {batch.batchName}</strong></div>
+        </div>
+    </lightning-card>
+</template>

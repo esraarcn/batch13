@@ -1,0 +1,16 @@
+<template>
+   <lightning-card title="Record View Form - Opportunity">
+    <div class="slds-var-m-around_medium">
+        <lightning-record-view-form object-api-name={objName}
+                                    record-id={recordId}>
+        <div class="slds-box">
+            <lightning-output-field field-name={fields.OpportunityName}></lightning-output-field>
+            <lightning-output-field field-name={fields.CloseDate}></lightning-output-field>
+            <lightning-output-field field-name={fields.StageName}></lightning-output-field>
+            <lightning-output-field field-name={fields.ExpectedRevenue}></lightning-output-field>
+            <lightning-output-field field-name={fields.AccountName}></lightning-output-field>
+        </div>
+        </lightning-record-view-form>
+    </div>
+   </lightning-card> 
+</template>
