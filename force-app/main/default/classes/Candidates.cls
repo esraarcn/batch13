@@ -1,4 +1,6 @@
 public class Candidates {
+
+    // about candidates
     public string name;
     public string gender;
     public static string companyName;
