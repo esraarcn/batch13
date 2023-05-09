@@ -1,3 +1,34 @@
 <template>
-    
+    <lightning-card>
+
+        <!--Lightning Record Edit Form-->
+        <div class="slds-var-m-around_medium">
+           <b>Record Edit Form</b> <br/>
+            <lightning-record-edit-form
+            record-id={recordId}
+            object-api-name={objName}>
+            <lightning-input-field field-name={fields.Subject}></lightning-input-field>
+            <lightning-input-field field-name={fields.Status}></lightning-input-field>
+            <lightning-input-field field-name={fields.CaseOrigin}></lightning-input-field>
+            <div class="slds-align_absolute-center">
+                <lightning-button label="Cancel" type="reset" variant="neutral" class="slds-var-m-right_x-small"></lightning-button>
+                <lightning-button label="Save" type="submit" variant="brand"></lightning-button>
+            </div>        
+            </lightning-record-edit-form>
+        </div>
+
+        <!--Lightning Record View Form-->
+        <div class="slds-var-m-around_medium" title="Record View Form">
+            <b>Record View Form</b> <br/>
+            <lightning-record-view-form
+            object-api-name={objName}
+            record-id={recordId}>
+            <lightning-output-field field-name={fields.Subject}></lightning-output-field>
+            <lightning-output-field field-name={fields.Status}></lightning-output-field>
+            <lightning-output-field field-name={fields.CaseOrigin}></lightning-output-field>        
+            </lightning-record-view-form>
+
+        </div>
+
+    </lightning-card>
 </template>

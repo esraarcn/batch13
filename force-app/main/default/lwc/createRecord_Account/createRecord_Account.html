@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title = "Create record-Account">
+        <div class ="slds-var-m-around_medium">
+           <form>
+            <lightning-input type="text" label="First Name" name="Name" placeholder="type here..." onchange={changeHandler}></lightning-input>
+            <lightning-input type="number" label="Annual Revenue" name="AnnualRevenue" placeholder="type here..." onchange={changeHandler}></lightning-input>
+            <div class="slds-align_absolute-center">
+                <lightning-button label="Reset" onclick={resetForm}></lightning-button>
+               <lightning-button variant="brand" label="Create Account" class="slds-align_absolute-center slds-var-m-top_small" onclick={createRecordAccount}></lightning-button>
+            </div>
+            </form>
+        </div>
+    </lightning-card>
+</template>

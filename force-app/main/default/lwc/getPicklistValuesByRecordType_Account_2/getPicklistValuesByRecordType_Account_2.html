@@ -1,0 +1,22 @@
+<template>
+    <lightning-card title="getPicklistValuesByRecordType_2">
+        <div class="slds-var-m-around_medium">
+            <lightning-combobox
+            label="Rating - Account"
+            options={ratingOptions}
+            onchange={handleChange}>
+            </lightning-combobox> <br/>
+            <lightning-combobox
+            label="Account Source - Account"
+            options={accSourceOptions}
+            onchange={handleChange_1}>
+            </lightning-combobox> <br/>
+            <template lwc:if={selectedRating}>
+                <div>Selected Rating is {selectedRating}</div>
+            </template>
+            <template lwc:if={selectedAccountSource}>
+                <div>Selected Rating is {selectedAccountSource}</div>
+            </template>
+        </div>
+    </lightning-card>
+</template>

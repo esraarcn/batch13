@@ -1,0 +1,30 @@
+<template>
+    <lightning-card title="Assignment Contact Picklist">
+      <div class="slds-var-m-around_medium">
+        <lightning-combobox
+          
+          label="Contact Level"
+          
+          placeholder="Select Level"
+          options={levelOpt}
+          onchange={handleChange} ></lightning-combobox>
+
+          <template lwc:if={selectedLevel}>
+            <div><b></b> Selected Level is {selectedLevel}</div>
+        </template>
+
+        <lightning-combobox
+          
+        label="Contact Source"
+        
+        placeholder="Select Source"
+        options={sourceOpt}
+        onchange={handleChange1} ></lightning-combobox>
+
+        <template lwc:if={selectedSource}>
+          <div><strong>Selected Source is {selectedSource}</strong></div>
+      </template>
+
+      </div>
+    </lightning-card>
+</template>

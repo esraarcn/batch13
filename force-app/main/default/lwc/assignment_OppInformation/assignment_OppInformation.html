@@ -1,0 +1,32 @@
+<template>
+   <lightning-card title="GET OPP INFO ">
+    <div class="slds-var-m-around_medium">
+        <lightning-input type="text" label="Opportunity Name" value={OppName1} onchange={nameHandler}></lightning-input>
+        <lightning-combobox
+        label="Type"
+        options={typeOption}
+        onchange={typeHandler2}
+        >
+        </lightning-combobox>
+        <lightning-combobox
+        label="Stage"
+        options={stageOpt}
+        onchange={stageHandler2}
+        >
+        </lightning-combobox>
+    </div>
+    <div class="slds-var-m-top_medium">
+        Thanks for choosing the correct information. You have entered <br/>
+        <template lwc:if={oppName}>
+            Opportunity Name: {oppName} <br/>
+        </template>
+        <template lwc:if={oppType}>
+            Opportunity Type: {oppType} <br/>
+        </template>
+        <template lwc:if={oppStage}>
+            Opportunity Stage: {oppStage}
+        </template>
+        
+    </div>
+   </lightning-card> 
+</template>
