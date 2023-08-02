@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="C2P - Event with Data">
+        <div class="slds-var-m-around_medium">
+        <c-c2p-display-name-child onnameclick={nameHandler}></c-c2p-display-name-child>
+        <template lwc:if={value}>
+            <div class="slds-var-m-top_x-small">
+            First Name is {fName}
+            Last Name is {lName}
+            </div>
+        </template>    
+
+
+        </div>
+    </lightning-card>
+</template>

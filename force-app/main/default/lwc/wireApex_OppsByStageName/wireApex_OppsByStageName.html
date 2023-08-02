@@ -1,0 +1,22 @@
+<template>
+    <lightning-card title="Wire - Opps by Stage Name">
+        <div class="slds-var-m-around_medium">
+            <lightning-combobox
+                name="StageName"
+                label="Stage Name"
+                placeholder="Choose Stage Name"            
+                options={stageOptions}
+                onchange={changeHandler}>
+            </lightning-combobox>
+
+            <template lwc:if={opps.data}>
+                <lightning-datatable
+                    data={opps.data}
+                    columns={columns}
+                    key-field="id">
+                </lightning-datatable>
+            </template>
+
+        </div>
+    </lightning-card>
+</template>

@@ -1,0 +1,60 @@
+<template>
+    <lightning-card title="Opp form" icon-name="standard:opportunity">
+        <div class="slds-var-m-around_medium">
+            <form class="oppform">
+                <!-- Name -->
+                <lightning-input
+                    type="text"
+                    label="Opportunity Name"
+                    name="Name"
+                    value={name}
+                    onchange={changeHandler}>
+                </lightning-input>
+
+                <!-- Type -->
+                <lightning-combobox
+                    label="Type"
+                    options={typeOptions}
+                    name="Type"
+                    value={type}
+                    onchange={changeHandler}>
+                </lightning-combobox>
+
+                <!-- Stage -->
+                <lightning-combobox
+                    label="Stage"
+                    options={stageOptions}
+                    name="StageName"
+                    value={stage}
+                    onchange={changeHandler}>
+                </lightning-combobox>
+
+                <!-- Amount -->
+                <lightning-input
+                    type="number"
+                    label="Amount"
+                    name="Amount"
+                    value={amount}
+                    onchange={changeHandler}>
+                </lightning-input>
+
+                <!-- Close Date -->
+                <lightning-input
+                    type="date"
+                    label="Close Date"
+                    name="CloseDate"
+                    value={closedate}
+                    onchange={changeHandler}>
+                </lightning-input>
+
+                <div class="slds-align_absolute-center slds-var-m-top_medium">
+                    <lightning-button
+                        label="Update"
+                        value="brand-outline"
+                        onclick={updateHandler}>
+                    </lightning-button>
+                </div>
+            </form>
+        </div>
+    </lightning-card>
+</template>

@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="P2C Action at Parent - Get Contacts">
+        <div class="slds-var-m-around_medium">
+            <lightning-button label="Get Contacts" variant="Brand" onclick={clickHandler}></lightning-button>
+        
+            <template lwc:if={contacts}>
+                <c-p2c-display-contacts-child
+                contacts-info={contacts}
+                columns-child={columns}>                
+                </c-p2c-display-contacts-child>
+            </template>
+
+        </div>
+    </lightning-card>
+</template>

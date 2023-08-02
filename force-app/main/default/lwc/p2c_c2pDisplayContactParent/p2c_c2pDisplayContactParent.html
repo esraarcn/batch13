@@ -1,0 +1,23 @@
+<template>
+    <lightning-card title="P2C - C2P">
+        <div class="slds-var-m-around_medium">        
+                <lightning-input  
+                placeholder="Please enter a Contact Record Id.."
+                type="text"
+                onchange={recordIdHandler}
+                ></lightning-input>   <br/>       
+            
+                <lightning-button label="Show Details" variant="brand" onclick={showDetailsHandler}></lightning-button>
+            
+        </div>
+        <template if:true={showModal}>
+            <c-p2c_c2p-display-contact-child
+            record-id={recordId}
+            onclose={closeHandlerParent}
+            ></c-p2c_c2p-display-contact-child>
+        </template>
+        <template if:true={message}>
+            <div class="slds-var-m-around_medium"><I>{message}</I></div>
+        </template>
+    </lightning-card>
+</template>

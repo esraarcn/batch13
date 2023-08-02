@@ -1,0 +1,23 @@
+<template>
+    <lightning-card title="Opp Form">
+        <div class="slds-var-m-around_medium">
+        <lightning-record-edit-form
+        object-api-name={objName}
+        record-id={recordId}
+        onsuccess={successHandler}
+        onerror={errorHandler}
+        >
+        <lightning-input-field field-name={fields.Name}></lightning-input-field>
+        <lightning-input-field field-name={fields.Type}></lightning-input-field>
+        <lightning-input-field field-name={fields.StageName}></lightning-input-field>
+        <lightning-input-field field-name={fields.Amount}></lightning-input-field>
+        <lightning-input-field field-name={fields.CloseDate}></lightning-input-field>
+        <div class="slds-align_absolute-center">
+        <lightning-button label="Update" type="submit" variant="brand" >
+        </lightning-button>
+        </div>
+
+        </lightning-record-edit-form>
+        </div>
+    </lightning-card>
+</template>

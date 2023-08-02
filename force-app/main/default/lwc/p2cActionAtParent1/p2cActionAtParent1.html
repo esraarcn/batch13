@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="P2C Action at Parent">
+        <div class="slds-var-m-around_medium">
+            <lightning-button label="Get Accounts" variant="Brand" onclick={clickHandler}></lightning-button>
+            <c-p2c-display-accounts-child
+            accounts-data={accounts}
+            ></c-p2c-display-accounts-child>
+
+        </div>
+    </lightning-card>
+</template>

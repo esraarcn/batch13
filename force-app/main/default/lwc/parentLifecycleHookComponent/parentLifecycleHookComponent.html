@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="Hooks Demo - Mounting Phase">
+        <div class="slds-var-m-around_medium">
+        <p>This is from Parent Component</p>
+        <c-child-lifecycle-hook-component></c-child-lifecycle-hook-component>
+
+        <div>
+            <lightning-button label="Show/Hide Child" onclick={clickHandler}>
+            </lightning-button>
+            <template lwc:if={showChild}>
+                <c-child-lifecycle-hook-component></c-child-lifecycle-hook-component>
+            </template>
+        </div>
+        </div>
+    </lightning-card>
+</template>

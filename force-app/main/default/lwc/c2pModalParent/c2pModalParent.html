@@ -1,0 +1,24 @@
+<template>
+    <lightning-card title="C2P Simple Event">
+        <div class="slds-var-m-around_medium">
+            <!--lightning-button : component
+                onclick : event  
+                clickHadler : eventHandler          
+            -->
+            <lightning-button label="Click Me!!" variant="brand" onclick={clickHandler}></lightning-button>
+            <template lwc:if={showModal}>
+                <!--c-c2p-modal-child : component
+                onclosemodal : event  
+                closeHandlerParent : eventHandler          
+            -->
+                <c-c2p-modal-child onclosemodal={closeHandlerParent}></c-c2p-modal-child>
+            </template>
+
+            <template lwc:if={info}>
+                <div class="slds-var-m-top_medium slds-align_absolute-center">
+                {info}
+                </div>
+            </template>
+        </div>
+    </lightning-card>
+</template>

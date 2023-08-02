@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="Imperative Calculator">
+        <div class="slds-var-m-around_medium">
+          <lightning-input label="Input 1" type="number" onchange={firstHandler}></lightning-input>      
+          <lightning-input label="Input 2" type="number" onchange={secondHandler}></lightning-input> 
+          <div class="slds-align_absolute-center slds-var-m-top_small">
+            <lightning-button label="Add" variant="Brand" name="Add" onclick={calcHandler}></lightning-button>
+            <lightning-button label="Sub" variant="Brand" class="slds-var-m-left_x-small" name="Sub" onclick={calcHandler}></lightning-button>
+            <lightning-button label="Multiply" variant="Brand" class="slds-var-m-left_x-small" name="Multiply" onclick={calcHandler}></lightning-button>
+            <lightning-button label="Divide" variant="Brand" class="slds-var-m-left_x-small" name="Divide" onclick={calcHandler}></lightning-button>
+          </div>
+        </div>
+    </lightning-card>
+</template>

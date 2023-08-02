@@ -1,0 +1,20 @@
+<template>
+    <!--
+        Carousel - 3 Carousel images
+        Array of Objects
+        for: each
+    -->
+    <lightning-carousel>
+        <template for:each={carouselInfo} for:item="info">
+            <lightning-carousel-image
+            key={info.src}
+            src = {info.src}
+            header = {info.header}
+            description = {info.description}
+            alternative-text = {info.alternativetext}
+            href = {info.href}>
+        </lightning-carousel-image>
+
+        </template>
+    </lightning-carousel>
+</template>

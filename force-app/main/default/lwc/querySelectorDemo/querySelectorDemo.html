@@ -1,0 +1,21 @@
+<template>
+    <lightning-card title="Query Selector - Demo">
+        <div class="slds-var-m-around_medium">
+            <!--Single Element-->
+            <h1>This is a header from Template</h1><br/>
+
+            <!--Multiple Elements-->
+            <lightning-input label="First Name" name="FirstName" class="demoName"></lightning-input>
+            <lightning-input label="Last Name" name="LastName" class="demoName"></lightning-input>
+
+            <lightning-button label="Click Me!!" onclick={clickHandler} class="slds-var-m-top_small"></lightning-button>
+            <br/>
+            <template lwc:if={firstName}>
+                <b class="slds-var-m-top_small">My Name is {firstName} {lastName}</b>
+            </template>
+
+            <div lwc:dom="manual" class="demoDiv"></div>
+            
+        </div>
+    </lightning-card>
+</template>

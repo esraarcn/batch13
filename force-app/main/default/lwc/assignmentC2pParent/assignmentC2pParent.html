@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="Customer Details">
+      <div class="slds-var-m-around_medium">
+        <c-assignment-c2p-child onshowcustomer={detailHandler}></c-assignment-c2p-child>
+        <template lwc:if={showDetail}>
+         
+          Customer Info <br>
+          Name: {cName} <br>
+          Email: {cEmail} <br>
+          Phone: {cPhone} <br>
+          Address: {cAddress}
+         
+        </template>
+      </div>
+    </lightning-card>
+</template>

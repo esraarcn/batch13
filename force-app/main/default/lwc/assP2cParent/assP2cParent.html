@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="Assignment Name">
+      <div class="slds-var-m-around_medium">
+        <lightning-input label="Name" onchange={changeHandler}></lightning-input> <br>
+        <template lwc:if={myName}>
+        <c-ass-p2c-child name={myName}></c-ass-p2c-child>
+        </template>
+
+      </div>
+    </lightning-card>
+</template>

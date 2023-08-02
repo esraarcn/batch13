@@ -1,0 +1,18 @@
+<template>
+    <lightning-card title = "Event Bubbling">
+        <div class="slds-var-m-around_medium">
+            <h1>I am Parent Component</h1><br/>
+            <!---Scenario 1 : bubbles : true, composed : false
+            <c-child-component></c-child-component>-->
+
+            <!--Scenario 2 : bubbles : true, composed : true-->
+            <c-child-component onbuttonclick={parentClickHandler}></c-child-component>
+            <div class="slds-var-m-top_small">
+                <template lwc:if={info}>
+                    {info}
+                </template>
+            </div>
+            
+        </div>
+    </lightning-card>
+</template>

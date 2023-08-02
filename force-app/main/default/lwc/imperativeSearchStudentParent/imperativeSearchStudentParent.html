@@ -1,0 +1,9 @@
+<template>
+    <lightning-card title="Search Students By PostalCode">
+        <div class="slds-var-m-around_medium">
+          <lightning-input label='Search Postal Code' onchange={changeHandler} value={searchWord}></lightning-input>
+          <c-imperative-search-student-child columns-list={columns} student-data={students} error={error}></c-imperative-search-student-child>
+      
+        </div>
+      </lightning-card>
+</template>

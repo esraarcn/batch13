@@ -1,0 +1,17 @@
+<template>
+    <lightning-card  title="Search Products" >
+       <div class="slds-var-m-around_medium">
+            <lightning-input label="price" type="search" onchange={changeHandler}>
+
+            </lightning-input>
+
+            <template lwc:if={products}>
+                <lightning-datatable
+                    data={products}
+                    columns={columns}
+                    key-field="id">
+                </lightning-datatable>
+            </template>
+       </div>
+    </lightning-card>
+</template>

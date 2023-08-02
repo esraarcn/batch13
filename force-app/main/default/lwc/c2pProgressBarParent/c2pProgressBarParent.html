@@ -1,0 +1,8 @@
+<template>
+    <lightning-card title="C2P - Progress Bar">
+        <div class="slds-var-m-around_medium">
+            <lightning-progress-bar value={progressValue} size="large"></lightning-progress-bar>
+            <c-c2p-progress-bar-child onpassprogress={parentHandler}></c-c2p-progress-bar-child>
+        </div>
+    </lightning-card>
+</template>
